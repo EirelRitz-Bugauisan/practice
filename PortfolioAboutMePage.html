@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: repeating-linear-gradient(45deg, #d3d3d3, #d3d3d3 2px, #f0f0f0 2px, #f0f0f0 4px);
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .container {
+      background: white;
+      margin: 0 0.5in;
+      max-width: calc(100% - 1in);
+      padding: 80px 40px 60px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      flex-grow: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      background: white;
+      color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin-right: 270px;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+      filter: brightness(12) invert(-100);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.2);
+      background-color: black;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .hero img {
+      margin-top: 20px;
+      width: 270px;
+      height: 270px;
+      border: 5px solid;
+      margin-right: 20px;
+      animation: fadeInLeft 1.5s ease-in-out;
+    }
+
+    .hero h1, .hero p, .section h2, .section p, .section ul, .cta-button {
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .highlight-blue {
+      background-color: #a3eaff;
+      padding: 0 10px;
+    }
+
+    .highlight-purple {
+      background-color: #9998ff;
+      color: white;
+      padding: 0 10px;
+    }
+
+    .subtext {
+      font-size: 1.2rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #9998ff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: green;
+    }
+
+    footer {
+      background-color: white;
+      color: black;
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      margin-bottom: -0.6in;
+    }
+
+    .footer-container {
+      max-width: calc(100% - 1in);
+      margin: 0 auto;
+    }
+
+    .footer-links a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      transform: scale(1.2);
+      background-color: black;
+      color: white;
+    }
+
+    /* Additional styling for headers */
+    .education-header {
+      font-size: 2rem;
+    }
+
+    .university-header, .coursework-header {
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Logo" />
+        <span>Eirel Ritz Bugauisan</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="PortfolioAboutMePage.html">About</a>
+        <a href="PortfolioProjectPage.html">Project</a>
+        <a href="PortfolioContactPage.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="Images/Eirel.jpeg" alt="Profile Image" />
+      <div>
+        <h1>About Me</h1>
+        <p class="subtext">
+          Hi! I'm <span class="highlight-blue">Eirel Ritz Bugauisan</span>, and I am a passionate beginner college student exploring the exciting world of web development and design. Currently, I am studying Web Development, where I am learning the essential skills needed to build interactive and engaging websites.
+          I am particularly interested in front-end development, focusing on HTML, CSS, and JavaScript. My goal is to create user-friendly, visually appealing websites that make an impact. Though I am just starting my journey, I am always eager to learn new technologies and expand my knowledge.
+          When I’m not coding, you can find me working on personal projects, experimenting with design tools, or collaborating with classmates on exciting challenges. I am excited to continue growing as a developer and am always looking for opportunities to learn, improve, and contribute to projects.
+          Thank you for visiting my portfolio! Feel free to explore my projects and connect with me if you’re interested in collaborating or learning more.
+        </p>
+      </div>
+    </section>
+
+    <div class="section">
+      <h2>My Expertise</h2>
+      <p>I offer a wide range of services, including:</p>
+      <ul>
+        <li>Web Design</li>
+        <li>Front-End Development (HTML, CSS, JavaScript)</li>
+        <li>UI/UX Design</li>
+        <li>Back-End Development (Node.js, PHP, etc.)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Design Principles</li>
+        <li>Version Control (Git & GitHub)</li>
+        <li>Problem Solving & Debugging</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="education-header">Education</h2>
+      <h3 class="university-header">Our Lady Of Fatima University, Quezon City</h3>
+      <h3 class="coursework-header">Relevant Coursework</h3>
+      <ul>
+        <li>Gained a comprehensive understanding of software development, systems analysis, networking, and database management.</li>
+        <li>Developed proficiency in programming languages such as Java, Python, and C++, alongside knowledge in web development and cloud computing.</li>
+        <li>Collaborated on multiple team projects, enhancing skills in teamwork, problem-solving, and project management.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Let’s Work Together!</h2>
+      <p>If you’d like to collaborate on a project or just want to connect, don’t hesitate to reach out. I’m always excited to help bring new ideas to life!</p>
+      <a href="PortfolioContactPage.html" class="cta-button">Get in Touch</a>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Eirel Ritz Bugauisan. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="PortfolioPolicyPrivacyPage.html">Privacy Policy</a> | 
+          <a href="PortfolioTerms&ServicesPage.html">Terms of Service</a> | 
+          <a href="PortfolioContactPage.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
